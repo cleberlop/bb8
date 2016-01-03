@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+@font-face {
+  font-family: 'Strjmono';
+  src: url('fonts/Strjmono.ttf');
+}
+
+@font-face {
+  font-family: 'Starjhol';
+  src: url('fonts/Starjhol.ttf');
+}
+
+game {
+  border: 10px solid rgb(98, 97, 97);
+  position:fixed;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  margin: -1.235vh;
+
+}
+
+
+#background-img {
+  border: 10px solid rgb(98, 97, 97);
+  position:fixed;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  /*margin: -1.235vh;
+  padding: 0;*/
+  z-index: 1;
+
+}
+
+.robot {
+  position:relative;
+  left: 0;
+  top: 60vh;
+  display: flex;
+  z-index: 1000;
+  height: 20vh;
+
+}
+
+#jawa {
+  z-index: 900;
+  position: absolute;
+  right: -100px;
+  bottom: 20vh;
+  height: 10vh;
+}
+
+.name {
+  position:absolute;
+  top: 5px;
+  left: 40px;
+  z-index: 1001;
+  font-size: 3.2em;
+  font-family: 'Strjmono';
+  color: rgba(19, 19, 18, 0.8);
+  text-shadow: .5px .5px .5px rgba(37, 37, 37, 0.67);
+  font-weight: lighter;
+
+}
+
+button {
+  z-index: 850;
+  position:absolute;
+  left: 30vw;
+  top: 17vw;
+  height: 30vh;
+  width: 40vw;
+  background:rgb(26, 24, 25);
+  border: 7px solid rgb(98, 97, 97);
+  border-radius: 13px;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px rgb(179, 150, 0);
+  font-size: 3em;
+  font-family: 'Starjhol';
+  color: #FEE83D;
+
+}
+button:hover {
+  background: rgba(251, 252, 246, 0.34);
+  color: rgb(158, 119, 2);
+  font-family: 'Strjmono';
+  text-shadow: 2.5px 2.5px 2.5px rgb(0, 0, 0);
+  font-weight: lighter;
+
+}
+
+
+
+
+
+
+
+/*.Game {
+  position:fixed;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: green;
+  margin: -1.235vh;
+  padding: 0;
+
+}*/
